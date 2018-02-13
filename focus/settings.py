@@ -4,6 +4,8 @@ from django.utils.timezone import timedelta
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+CORS_ORIGIN_ALLOW_ALL=True
+
 SECRET_KEY = '+3=)n@#%aew)v-2=vx59v#!ijdj80egcy@ev*1mmv@q0lcjy_y'
 
 # SECURITY WARNING: don't run with debug turned on in production!

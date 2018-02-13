@@ -19,7 +19,7 @@ class EmployeeInline(admin.TabularInline):
 
 class UserAdmin(admin.ModelAdmin):
     inlines = (EmployeeInline,)
-    list_display = ['first_name', 'last_name', 'email', 'username', 'is_active',]
+    list_display = ['email', 'first_name', 'last_name', 'username', 'is_active',]
     list_filter = ['is_active', 'is_staff' ]
 
 admin.site.unregister(User)
